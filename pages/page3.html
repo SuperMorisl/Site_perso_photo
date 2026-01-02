@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifs et Contact</title>
+    <link rel="stylesheet" href="../css/mystyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="page2.html">Portfolio</a></li>
+            <li><a href="page3.html">Tarifs & Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Grille de Tarifs</h2>
+        <table>
+            <tr>
+                <th>Prestation</th>
+                <th>Durée</th>
+                <th>Prix</th>
+            </tr>
+            <tr>
+                <td>Portrait Solo</td>
+                <td>1 Heure</td>
+                <td>150 €</td>
+            </tr>
+            <tr>
+                <td>Événement</td>
+                <td>Demi-journée</td>
+                <td>500 €</td>
+            </tr>
+        </table>
+
+        <section class="contact-form">
+            <h2>Demande de devis</h2>
+            <form>
+                <label for="name">Votre nom :</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Votre email :</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="subject">Type de projet :</label>
+                <select id="subject">
+                    <option>Mariage</option>
+                    <option>Portrait</option>
+                    <option>Entreprise</option>
+                </select><br>
+
+                <button type="submit">Envoyer la demande</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
