@@ -5,53 +5,97 @@ body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #333;
+    background-color: #000000;
+    
 }
+   
 
 /* Navigation fixe */
-.navbar {
-    position: fixed;
+.navbar li   {
+    position: relative;
+    justify-content: space-evenly;  /* espace parfaitement égal */
+    display: flex;
+    line-height: 49px; /* pour centrer le texte verticalement */
+    align-content: center;
     top: 0;
-    width: 100%;
-    background-color: rgba(229, 229, 227, 0.95);
-    border-bottom: 1px solid #eee;
+    width: 50%
+    background-color #fff;
     z-index: 1000;
+    margin:auto; 
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: absolute;
     margin: 0;
-    padding: 15px;
+    padding: 14px;
+    background-color: #545555
+        
 }
 
-.navbar li { margin: 0 20px; }
+
 
 .navbar a {
+    position:relative;
+    line-height: auto;      /* pour centrer le texte verticalement */
     text-decoration: none;
-    color: #111;
+    color: #ffffff;
     text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px;
+    font-size: 19px;
+    letter-spacing: 5rems;
+    font-family:'letterer-spacing';
+        
 }
 
+
+.image-position {
+  position: relative; /* ou relative, fixed, sticky selon ton besoin */
+  top: 50px;          /* distance du haut */
+  left: 100px;        /* distance de la gauche */
+right: 100px;
+  transform: translate(-50%, -50%); /* pour centrer précisément */
+}
 /* Header avec image pleine largeur */
 .hero-header {
-    height: 80vh;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/hero.jpg') no-repeat center center/cover;
-    display: flex;
+    height: 64vh;
+    background: 
+        url('../images/_24A8363.JPG') center center / cover no-repeat;
+     
+    background-size: cover;       /* adapte l'image à la taille du bloc */
+    background-position: center;  /* centre l'image */
+    background-repeat: no-repeat; /* empêche la répétition */
+    
     align-items: center;
-    justify-content: center;
-    color: white;
+    position: relative;
+    justify-content:center;
     text-align: center;
+    overflow: hidden;
 }
 
+.hero-text p {
+    position:relative;
+    right: 52%;
+    left: 1%;
+    margin: -87px;
+    padding: 0 28rem;
+    margin-top: 91px;
+    font-size: 81%;
+    color: #000000
+    
+}
 .hero-text h1 {
+    position: relative;
+    width: 98%;
+    left: 43%;              /* centre horizontalement */
+    right: 50%;
+    transform: translateX(-44%);         /* centre exact */
     font-family: 'Playfair Display', serif;
-    font-size: 4rem;
-    margin: 0;
+    font-size: 6rem;
+    margin: 3px;
+    text-align: center;     /* centre le texte */
+    white-space: nowrap; /* Empêche le texte de se mettre à la ligne */
+     color: #ffffff;
 }
 
 /* Tableaux et formulaires */
@@ -59,6 +103,7 @@ main {
     padding: 100px 20px 50px;
     max-width: 900px;
     margin: auto;
+    color: aliceblue
 }
 
 table {
@@ -74,23 +119,28 @@ th, td {
 }
 
 /* Galerie simple */
-.gallery {
+.portfolio{
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+    gap: 15px;   
+    
+    
 }
+  
 
-.gallery img {
-    width: 100%;
-    height: auto;
+
+.gallery {
+    display:block;
+    position: relative;
+    width: 200px;
+    height: 203px;
     filter: grayscale(20%);
     transition: 0.3s;
 }
 
-.gallery img:hover { filter: grayscale(0%); }
-
 footer {
-    background: #111;
+    background: #000000;
     color: #fff;
     text-align: center;
     padding: 40px;
