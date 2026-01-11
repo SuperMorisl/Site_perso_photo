@@ -7,26 +7,43 @@
  <link rel="stylesheet" href="../css/mystyle.css">
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="../index.html">Accueil</a></li>
-            <li><a href="page2.html">Portfolio</a></li>
-        
-            <li><a href="page3.html">Tarifs & Contact</a></li>
-        </ul>
-    </nav>
+    <header id="nav-wrapper">
+        <nav>
+            <div class="nav-container">
+                <a href="/index.html" class="nav-link active">Accueil</a>
+                <a href="/pages/page2.html" class="nav-link">Portfolio</a>
+                <a href="/pages/page3.html" class="nav-link">Tarifs & contact</a>
+                <a href="/pages/contact.html" class="nav-link">Me</a>
+            </div>
+        </nav>
+    </header>
                 
-<main>
-    <h2>Mes Réalisations</h2>
-
-        <span>Shooting mode</span>
+    <main class="portfolio-container">
+        <h2>Mes Réalisations</h2>
+        <div class="photo-grid">
+        <div class="photo-item">
+        <span class="photo-title">Shooting mode</span>
         <img src="../images/_7A2979.jpg" alt="Shooting mode">
-    <span>Photos Architecture</span>
-        <img src="../images/_7A5448.jpg" alt="Photos Architecture">
-        <span>Photos d'évenement </span>
-        <img src="../images/_7A2481.jpg"  alt="Photos dévenements">
-    
+        </div>
 
+        <div class="photo-item">
+            <span class="photo-title">Photos Architecture</span>
+            <img src="../images/_7A5448.jpg" alt="Photos Architecture">
+        </div>
+
+        <div class="photo-item">
+            <span class="photo-title">Photos d'événement</span>
+            <img src="../images/_7A2481.jpg" alt="Photos d'événements">
+        </div>
+        </div>
     </main>
+    <footer class="modern-footer">
+            <div class="footer-content">
+                <p>Capturer l'instant, sublimer la vision.</p>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Into Pictures — <a href="mailto:alexduede.photo@gmail.com">Contactez-moi</a></p>
+                </div>
+            </div>
+    </footer>
     </body> 
 </html>
