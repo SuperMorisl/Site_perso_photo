@@ -140,7 +140,10 @@ body {
     width: 100%;
     margin-top: 50px; /* Espace après le titre H2 */
 }
-
+.photo-title{
+  color: #fcf9f9;
+  -webkit-text-stroke: 0.3px black;
+}
 
 /*+++++++++++++++++++++++++TARIFS+++++++++++++++++++++++++*/
 
