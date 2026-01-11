@@ -142,3 +142,117 @@ body {
 }
 
 
+/*+++++++++++++++++++++++++TARIFS+++++++++++++++++++++++++*/
+
+/* Conteneur principal */
+.content-wrapper {
+    padding: 120px 20px 80px;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* --- Style du Tableau --- */
+.table-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+th {
+    background: rgba(0, 212, 255, 0.2);
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.price {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+/* --- Style du Formulaire --- */
+.form-container {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: var(--accent-color);
+}
+
+/* Custom Select (pour éviter le fond blanc moche du navigateur) */
+select option {
+    background: #222;
+    color: white;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background: var(--accent-color);
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.btn-submit:hover {
+    background: white;
+    transform: translateY(-2px);
+}
+
+

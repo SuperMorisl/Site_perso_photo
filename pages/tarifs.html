@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifs et Contact</title>
+    <link rel="stylesheet" href="../css/mystyle.css">
+</head>
+<body>
+    <header id="nav-wrapper">
+        <nav>
+            <div class="nav-container">
+                <a href="/index.html" class="nav-link active">Accueil</a>
+                <a href="/pages/portfolio.html" class="nav-link">Portfolio</a>
+                <a href="/pages/tarifs.html" class="nav-link">Tarifs & contact</a>
+                <a href="/pages/contact.html" class="nav-link">Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content-wrapper">
+        <section class="pricing-section">
+            <h2>Grille de Tarifs</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Prestation</th>
+                            <th>Durée</th>
+                            <th>Prix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mariage</td>
+                            <td>Journée entière</td>
+                            <td class="price">800 €</td>
+                        </tr>
+                        <tr>
+                            <td>Portrait Solo</td>
+                            <td>1h - 3h</td>
+                            <td class="price">150 €</td>
+                        </tr>
+                        <tr>
+                            <td>Entreprise</td>
+                            <td>Demi-journée</td>
+                            <td class="price">350 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Demande de devis</h2>
+            <div class="form-container">
+                <form action="https://formspree.io/f/alexduede.photo@gmail.com" method="POST">
+                    <div class="input-group">
+                        <label for="name">Votre nom</label>
+                        <input type="text" id="name" name="name" placeholder="Ex: Jean Dupont" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Votre email</label>
+                        <input type="email" id="email" name="email" placeholder="email@exemple.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="subject">Type de projet</label>
+                        <select id="subject" name="subject">
+                            <option value="mariage">Mariage</option>
+                            <option value="portrait">Portrait</option>
+                            <option value="entreprise">Entreprise</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Envoyer la demande</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="modern-footer">
+            <div class="footer-content">
+                <p>Capturer l'instant, sublimer la vision.</p>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Into Pictures — <a href="mailto:alexduede.photo@gmail.com">Contactez-moi</a></p>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>
